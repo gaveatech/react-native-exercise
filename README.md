@@ -11,7 +11,8 @@ Use your creativity to create a React Native application that only does authenti
   - Login Screen
   - Register Screen
 - You must use styled-components
-- You must use React Navigation
+- You must choose a navigation library
+- You must choose a state library
 
 Make sure to use best practices when setting up your project. Things like eslint, prettier and editorconfig are well seen.
 
@@ -19,7 +20,6 @@ Make sure to use best practices when setting up your project. Things like eslint
 
 - Work on the UI to make it look good
 - Make the authentication work with JWT (You can use Firebase or any public JSON API)
-- Redux is not required but you can use it (If you integrate Sagas, even better!)
 - Animations
 - Semantic Git commits
 
