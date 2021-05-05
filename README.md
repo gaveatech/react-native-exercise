@@ -13,6 +13,7 @@ Use your creativity to create a React Native application that only does authenti
 - You must use styled-components
 - You must choose a navigation library
 - You must choose a state library
+- You must create automated tests (feel free to decide what to use)
 
 Make sure to use best practices when setting up your project. Things like eslint, prettier and editorconfig are well seen.
 
