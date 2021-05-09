@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Box> renders 1`] = `
+<View
+  align="center"
+  bgColor="#fff"
+  size="100%"
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderRadius": 15,
+        "elevation": 1,
+        "paddingBottom": 15,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 15,
+        "shadowColor": "#000",
+        "shadowOpacity": 0.8,
+        "shadowRadius": 2,
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <Text>
+    Só um teste
+  </Text>
+</View>
+`;

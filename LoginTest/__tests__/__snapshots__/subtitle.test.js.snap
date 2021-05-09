@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubTitle> Snapshot 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "RobotoLight",
+        "fontSize": 16,
+        "marginBottom": 20,
+      },
+    ]
+  }
+>
+  Teste
+</Text>
+`;
