@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "79924247458",
+    "project_id": "estudo-react-1553636060366",
+    "storage_bucket": "estudo-react-1553636060366.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79924247458:android:b3aa4b1bc3476ff26150fb",
+        "android_client_info": {
+          "package_name": "com.logintest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79924247458-6mjhansvtjh83eltbvk0jctvijdd2mkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA92PXcxOKfgrvnukCX3KZfmIem-ruND-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79924247458-6mjhansvtjh83eltbvk0jctvijdd2mkq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,24 +9,41 @@ const Input = ({
   keyboardType,
   password,
   autoFocus,
+  error,
 }) => {
   return (
-    <TextBox
-      {...{onChangeText, value, placeholder, keyboardType, autoFocus}}
-      autoCorrect={false}
-      secureTextEntry={password}
-      testID="input"
-    />
+    <InputWrapper>
+      <TextBox
+        {...{onChangeText, value, placeholder, keyboardType, autoFocus}}
+        autoCorrect={false}
+        secureTextEntry={password}
+        testID="input"
+      />
+      {error && <Error>{error}</Error>}
+    </InputWrapper>
   );
 };
 
 const TextBox = styled.TextInput`
   border: 1px solid #ccc;
   border-radius: 25px;
-  margin-bottom: 10px;
   padding: 10px 20px;
   min-width: 80%;
   font-family: 'RobotoRegular';
+`;
+
+const Error = styled.Text`
+  font-size: 13px;
+  font-family: 'RobotoThing';
+  color: #ff0000;
+  margin-left: 20px;
+`;
+
+const InputWrapper = styled.View`
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  height: 70px;
 `;
 
 TextBox.propTypes = {
@@ -36,10 +53,12 @@ TextBox.propTypes = {
   keyboardType: PropTypes.string,
   password: PropTypes.bool,
   autoFocus: PropTypes.bool,
+  error: PropTypes.string,
 };
 
 TextBox.defaultProps = {
   value: '',
+  error: '',
   placeholder: '',
   keyboardType: 'default',
   password: false,
