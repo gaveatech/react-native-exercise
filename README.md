@@ -3,7 +3,7 @@
 
 ## Reactjs or React Native Login
 
-Use your creativity to create a React Native application that only does authentication.
+Use your creativity to create an application that only does authentication.
 
 ### Requirements
 
