@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import styled from 'styled-components/native';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
@@ -11,10 +11,13 @@ import Input from '../../components/Input';
 
 import {logIn} from '../../services';
 
+import {LoginContext} from '../../context';
+
 const Home = ({navigation}) => {
-  const [email, setEmail] = useState('');
-  const [pass, setPass] = useState('');
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState();
+
+  const {setEmail} = useContext(LoginContext);
 
   const SignupSchema = Yup.object().shape({
     email: Yup.string()
@@ -26,7 +29,12 @@ const Home = ({navigation}) => {
   });
 
   const submitHandle = async bool => {
-    (await bool) ? navigation.navigate('Logged') : console.log('nao foi');
+    if (await bool) {
+      setLoading(false);
+      navigation.navigate('Logged');
+    } else {
+      console.log('nao foi');
+    }
   };
 
   return (
@@ -38,11 +46,13 @@ const Home = ({navigation}) => {
         <Formik
           initialValues={{email: '', password: ''}}
           validationSchema={SignupSchema}
-          onSubmit={values =>
-            submitHandle(logIn(values.email, values.password))
-          }>
+          onSubmit={values => {
+            setLoading(true);
+            // setLoginState(values);
+            submitHandle(logIn(values.email, values.password));
+          }}>
           {({handleChange, errors, handleSubmit, values}) => (
-            <>
+            <LoginContext.Provider value={setEmail(values.email)}>
               <Input
                 placeholder="Digite seu e-mail"
                 keyboardType="email-address"
@@ -63,6 +73,7 @@ const Home = ({navigation}) => {
                 size="50%"
                 bgColor="#315999"
                 onPress={handleSubmit}
+                loading={loading}
               />
               <Btn
                 title="Ainda não possui login? Clique aqui"
@@ -70,7 +81,7 @@ const Home = ({navigation}) => {
                 bgColor="#f4f4f4"
                 color="#247d33"
               />
-            </>
+            </LoginContext.Provider>
           )}
         </Formik>
       </Box>

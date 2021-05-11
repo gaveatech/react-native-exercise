@@ -26,4 +26,10 @@ const logIn = async (email, password) => {
   return status;
 };
 
-export {logIn};
+const logOut = () => {
+  auth()
+    .signOut()
+    .then(() => console.log('User signed out!'));
+};
+
+export {logIn, logOut};

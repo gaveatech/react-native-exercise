@@ -8,7 +8,7 @@ const Box = ({size, bgColor, align, children}) => {
 
 const Wrapper = styled.View`
   background-color: ${props => props.bgColor};
-  padding: 15px;
+  padding: 10px;
   width: ${props => props.size};
   border-radius: 15px;
   shadow-color: #000;

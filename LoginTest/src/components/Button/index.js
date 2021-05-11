@@ -7,7 +7,9 @@ const Btn = ({bgColor, color, size, onPress, title, loading}) => {
   return (
     <Button testID="touch" {...{bgColor, size, onPress}}>
       <Text {...{color}}>{title}</Text>
-      {loading && <ActivityIndicator size="small" color={color} />}
+      {loading && (
+        <ActivityIndicator style={{marginLeft: 5}} size="small" color={color} />
+      )}
     </Button>
   );
 };
@@ -19,11 +21,11 @@ const Button = styled.Pressable`
   width: ${props => props.size};
   margin-bottom: 15px;
   flex-direction: row;
+  justify-content: center;
 `;
 
 const Text = styled.Text`
   color: ${props => props.color};
-  width: 100%;
   text-align: center;
   font-family: 'RobotoRegular';
   font-size: 16px;
