@@ -7,13 +7,15 @@ import SubTitle from '../../components/SubTitle';
 import Btn from '../../components/Button';
 
 import {logOut} from '../../services';
+import {storeData} from '../../utils';
 
 import {LoginContext} from '../../context';
 
 const Logged = ({navigation}) => {
   const {email} = useContext(LoginContext);
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
+    await storeData('logged', '0');
     logOut;
     navigation.navigate('Home');
   };
