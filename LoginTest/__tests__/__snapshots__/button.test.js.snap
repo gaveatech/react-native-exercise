@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button> Snapshot 1`] = `
+<View
+  accessible={true}
+  bgColor="#000"
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  size="100%"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#000",
+        "borderRadius": 20,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "paddingBottom": 10,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 10,
+        "width": "100%",
+      },
+    ]
+  }
+  testID="touch"
+>
+  <Text
+    color="#fff"
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontFamily": "RobotoRegular",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Botao
+  </Text>
+</View>
+`;

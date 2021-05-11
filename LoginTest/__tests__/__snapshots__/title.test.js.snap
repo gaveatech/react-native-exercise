@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title> Snapshot 1`] = `
+<Text
+  color="#000"
+  style={
+    Array [
+      Object {
+        "color": "#000",
+        "fontFamily": "RobotoBold",
+        "fontSize": 24,
+        "marginBottom": 5,
+      },
+    ]
+  }
+>
+  Teste
+</Text>
+`;

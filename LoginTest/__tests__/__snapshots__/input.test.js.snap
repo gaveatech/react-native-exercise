@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input> Snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "column",
+        "height": 70,
+        "justifyContent": "flex-start",
+        "marginBottom": 5,
+      },
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    autoCorrect={false}
+    autoFocus={false}
+    error=""
+    keyboardType="default"
+    onChangeText={[Function]}
+    password={false}
+    placeholder=""
+    rejectResponderTermination={true}
+    style={
+      Array [
+        Object {
+          "borderColor": "#ccc",
+          "borderRadius": 25,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "fontFamily": "RobotoRegular",
+          "minWidth": "80%",
+          "paddingBottom": 10,
+          "paddingLeft": 20,
+          "paddingRight": 20,
+          "paddingTop": 10,
+        },
+      ]
+    }
+    testID="input"
+    underlineColorAndroid="transparent"
+    value=""
+  />
+</View>
+`;
