@@ -21,6 +21,8 @@ exports[`<Button> Snapshot 1`] = `
       Object {
         "backgroundColor": "#000",
         "borderRadius": 20,
+        "flexDirection": "row",
+        "justifyContent": "center",
         "marginBottom": 15,
         "paddingBottom": 10,
         "paddingLeft": 0,
@@ -41,7 +43,6 @@ exports[`<Button> Snapshot 1`] = `
           "fontFamily": "RobotoRegular",
           "fontSize": 16,
           "textAlign": "center",
-          "width": "100%",
         },
       ]
     }
