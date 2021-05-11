@@ -1,7 +1,7 @@
 # Front-end/Mobile Software Test
 > A test you can take to move forward on your Gavea application process.
 
-## Awesome React Native Login
+## Awesome (Reactjs/React Native) Login
 
 Use your creativity to create a React Native application that only does authentication.
 
